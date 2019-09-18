@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CommandLineSample": {
+      "commandName": "Project",
+      "commandLineArgs": "name=调试 age=66 tel=1352"
+    }
+  }
+}
