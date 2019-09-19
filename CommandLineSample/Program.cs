@@ -8,6 +8,12 @@ namespace CommandLineSample
     {
         static void Main(string[] args)
         {
+
+            //框架设计
+            //关键
+            //一、IconfigurationSource 由 它 生成 IConfigurationProvider  
+             
+
             //1.新建字典
             var dri = new Dictionary<string, string>
             {
