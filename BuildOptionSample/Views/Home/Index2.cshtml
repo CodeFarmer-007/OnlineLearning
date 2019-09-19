@@ -1,0 +1,29 @@
+﻿@using Microsoft.Extensions.Options
+
+@inject IOptions<BuildOptionSample.ClassInfo> ClassAcc
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index2</title>
+</head>
+<body>
+
+    <h2>ClassName:@ClassAcc.Value.className</h2>
+    <h4>ClassNo:@ClassAcc.Value.classNo</h4>
+
+    <h1>StudentInfo</h1>
+
+    @foreach (var item in ClassAcc.Value.Info)
+    {
+        <h5>@item.name</h5>
+        <h5>@item.age</h5>
+    }
+
+</body>
+</html>
